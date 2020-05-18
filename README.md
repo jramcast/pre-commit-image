@@ -1,4 +1,4 @@
-# Pre-commit image
+# Pre commit image
 
 Docker image for running GLS pre-commit hooks. You can just run "pre-commit.sh", symlink or alias it to "pre-commit" in your system.
 
