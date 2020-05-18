@@ -1,9 +1,9 @@
 
-FROM quay.io/flozanorht/flamel:0.3-7 as pre-commit
+FROM quay.io/redhattraining/flamel as pre-commit
 
 RUN curl https://pre-commit.com/install-local.py | python - & \
     ln -s /root/bin/pre-commit /usr/bin/pre-commit & \
-    dnf install -y perl ruby
+    dnf install -y perl ruby rubygems
 
 FROM pre-commit
 
